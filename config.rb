@@ -23,3 +23,4 @@ javascripts_dir = "javascripts"
 # and then run:
 # sass-convert -R --from scss --to sass sass scss && rm -rf sass && mv scss sass
 require 'sassy-buttons'
+require 'compass-bootstrap'

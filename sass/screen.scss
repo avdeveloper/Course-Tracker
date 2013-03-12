@@ -14,6 +14,11 @@
 
 @import "partials/sassybuttons";
 
+// Bootstrap
+@import "partials/bootstrap/variables";  // Modify this for custom colors, font-sizes, etc
+@import "partials/bootstrap/mixins";
+@import "partials/bootstrap/forms";
+
 // Begin screen styles
 header {
   margin-bottom: 3em;
@@ -97,7 +102,7 @@ body#intro  {
     input {
       @include border-radius(0.5em);
       margin: 2em 0;
-      padding: 0.5em;
+      padding: 0 0.5em;
       width: 50%;
       font-size: 1.5em;
     }
