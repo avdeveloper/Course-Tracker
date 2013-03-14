@@ -521,7 +521,7 @@ footer {
 }
 
 // Base .btn styles
-.btn {
+@mixin btn {
   // Button Base
   cursor: pointer;
   display: inline-block;
@@ -591,6 +591,7 @@ footer {
     font-size: $basefont - 2px;
   }
 }
+
 // Super jank hack for removing border-radius from IE9 so we can keep filter gradients on alerts and buttons
 :root .alert-message,
 :root .btn {
@@ -800,7 +801,7 @@ input[type=submit].btn {
   @include background-clip(padding-box);
   .close { margin-top: 7px; }
   &.fade {
-    @include transition(e('opacity .3s linear, top .3s ease-out'));
+    //@include transition(e('opacity .3s linear, top .3s ease-out'));
     top: -25%;
   }
   &.fade.in { top: 50%; }
